@@ -1,25 +1,53 @@
-This code is a MATLAB script that performs various calculations related to the performance of a 1969 Ford Mustang Sportsroof 200 Six. The script includes calculations for torque, power, gear shifting, and performance metrics using both progressive and geometric gearboxes.
+# 1969 Ford Mustang Sportsroof 200 Six Performance Performance Analysis
 
-Here's a breakdown of the code:
+This repository houses a MATLAB script dedicated to analyzing the performance of a 1969 Ford Mustang Sportsroof 200 Six. Key metrics such as torque, power, and gear-shifting performance are assessed for both progressive and geometric gearboxes.
 
-    1. The code starts with clearing the workspace and command window using the clearvars and clc commands.
-    
-    2. The script sets up the plot and initializes the necessary variables and parameters for the car model, such as mass, drag coefficient, gear ratios, air density, tire radius, frontal area, top speed, rolling coefficient, mechanical efficiency, gravitational acceleration, coefficient of friction, height of center of gravity, progressive coefficient, number of gears, and rotational speed array.
-    
-    3. Two arrays are defined: Te for torque values at different rotational speeds and Pe for power values at different rotational speeds.
-    
-    4. The torque and power data arrays are used to fit polynomial functions using the polyfit function. These polynomial functions are then used to calculate torque and power values for different rotational speeds.
-    
-    5. The code calculates the highest gear shift by solving an equation that equates the brake engine torque and resistive pressure. The resulting rotational speed is used to calculate the gear ratio for the highest gear.
-    
-    6. The lowest gear shift is calculated based on the maximum torque and other parameters. The resulting gear ratio is used to calculate the constant Kg.
-    
-    7. The code calculates the coefficients C1, C2, and C3 for the progressive gearbox, as well as the gear ratios ig2, ig3, and ig4. These values are used to calculate the rotational speeds Ne3 and Ne4 for the 3rd and 4th gear shifts.
-    
-    8. The torque and tractive effort values for the 3rd and 4th gear shifts are calculated based on the rotational speeds. The upshift velocity is determined by finding the solution to the equation that equates the tractive effort in both gears.
-    
-    9. The code calculates the total resistance and brake engine torque for the progressive gearbox, substitutes the rotational speed NE with the calculated value for Ne4, and then calculates the time and distance for a specific speed range.
-    
-    10. Similar calculations are performed for the geometric gearbox, including the calculation of gear ratios, torque, tractive effort, and performance metrics.
+# Table of Contents
 
-Overall, this code performs calculations related to torque, power, gear shifting, and performance metrics for a specific car model using both progressive and geometric gearboxes. It utilizes mathematical equations and data interpolation to estimate the car's performance characteristics.
+1. [**Introduction**](#1969-ford-mustang-sportsroof-200-six-performance-analysis)
+    - Description of Repository and Car Model
+2. [**Code Structure**](#code-structure)
+    - Overview of Code Components
+    * [**Initialization**](#initialization)
+        1. [Workspace Setup](#workspace-setup)
+        2. [Model Parameters](#model-parameters)
+    * [**Data Setup**](#data-setup)
+        1. [Torque & Power Arrays](#torque--power-arrays)
+        2. [Polynomial Interpolation](#polynomial-interpolation)
+    * [**Gearbox Analysis - Progressive**](#gearbox-analysis---progressive)
+        1. [Top Gear Analysis](#top-gear-analysis)
+        2. [Base Gear Analysis](#base-gear-analysis)
+        3. [Intermediate Gear Coefficients](#intermediate-gear-coefficients)
+        4. [Gear Shift Parameters](#gear-shift-parameters)
+        5. [Upshift Velocity](#upshift-velocity)
+        6. [Performance Metrics](#performance-metrics)
+    * [**Gearbox Analysis - Geometric**](#gearbox-analysis---geometric)
+        1. Overview and Calculations
+3. [**Conclusion**](#conclusion)
+    - Summary and Significance of Analysis
+
+Note: The hyperlinks in the Table of Contents are for illustration purposes. If this is to be used on a platform that supports linking (like GitHub), the links should be made functional to lead to the corresponding sections of the document.
+
+## Code Structure:
+
+### Initialization:
+- **Workspace Setup**: The script begins by clearing the workspace and command window with the `clearvars` and `clc` commands.
+- **Model Parameters**: Necessary variables and parameters like mass, drag coefficient, gear ratios, and other pertinent car model information are initialized.
+
+### Data Setup:
+- **Torque & Power Arrays**: Two main arrays, `Te` (torque) and `Pe` (power), are set up corresponding to different rotational speeds.
+- **Polynomial Interpolation**: The `polyfit` function is employed to create polynomial fits from the torque and power data, aiding in subsequent calculations for various rotational speeds.
+
+### Gearbox Analysis - Progressive:
+1. **Top Gear Analysis**: Computes the highest gear shift through the equilibrium of brake engine torque and resistive pressure. This gives the gear ratio for the topmost gear.
+2. **Base Gear Analysis**: Determines the lowest gear shift based on max torque and other parameters, providing the value for the constant Kg.
+3. **Intermediate Gear Coefficients**: Calculation of coefficients `C1`, `C2`, and `C3`, and gear ratios `ig2`, `ig3`, and `ig4`.
+4. **Gear Shift Parameters**: Using the above data, the script assesses rotational speeds (`Ne3` & `Ne4`) for the 3rd and 4th gear shifts and their corresponding torque and tractive effort values.
+5. **Upshift Velocity**: This determines when to shift up, by equalizing the tractive efforts across gears.
+6. **Performance Metrics**: The code computes resistance, brake engine torque, time, and distance for a given speed range.
+
+### Gearbox Analysis - Geometric:
+- Replicates similar analyses as for the progressive gearbox, recalculating gear ratios, torque, tractive effort, and other performance indicators specific to a geometric gearbox.
+
+## Conclusion:
+This MATLAB script offers a deep dive into the performance attributes of the 1969 Ford Mustang Sportsroof 200 Six using a combination of mathematical modeling, data interpolation, and real-world physics, making it an invaluable tool for automotive enthusiasts and engineers alike.
