@@ -22,8 +22,6 @@ This repository houses a MATLAB script dedicated to analyzing the performance of
     * [**Gearbox Analysis - Geometric**](#gearbox-analysis---geometric)
 3. [**Conclusion**](#conclusion)
 
-Note: The hyperlinks in the Table of Contents are for illustration purposes. If this is to be used on a platform that supports linking (like GitHub), the links should be made functional to lead to the corresponding sections of the document.
-
 ## Code Structure:
 
 ### Initialization:
