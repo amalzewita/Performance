@@ -6,7 +6,6 @@ This repository houses a MATLAB script dedicated to analyzing the performance of
 
 1. [**Introduction**](#1969-ford-mustang-sportsroof-200-six-performance-analysis)
 2. [**Code Structure**](#code-structure)
-    - Overview of Code Components
     * [**Initialization**](#initialization)
         1. [Workspace Setup](#workspace-setup)
         2. [Model Parameters](#model-parameters)
