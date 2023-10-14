@@ -1,4 +1,4 @@
-# 1969 Ford Mustang Sportsroof 200 Six Performance Performance Analysis
+# 1969 Ford Mustang Sportsroof 200 Six Performance Analysis
 
 This repository houses a MATLAB script dedicated to analyzing the performance of a 1969 Ford Mustang Sportsroof 200 Six. Key metrics such as torque, power, and gear-shifting performance are assessed for both progressive and geometric gearboxes.
 
