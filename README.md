@@ -5,7 +5,6 @@ This repository houses a MATLAB script dedicated to analyzing the performance of
 # Table of Contents
 
 1. [**Introduction**](#1969-ford-mustang-sportsroof-200-six-performance-analysis)
-    - Description of Repository and Car Model
 2. [**Code Structure**](#code-structure)
     - Overview of Code Components
     * [**Initialization**](#initialization)
@@ -22,9 +21,7 @@ This repository houses a MATLAB script dedicated to analyzing the performance of
         5. [Upshift Velocity](#upshift-velocity)
         6. [Performance Metrics](#performance-metrics)
     * [**Gearbox Analysis - Geometric**](#gearbox-analysis---geometric)
-        1. Overview and Calculations
 3. [**Conclusion**](#conclusion)
-    - Summary and Significance of Analysis
 
 Note: The hyperlinks in the Table of Contents are for illustration purposes. If this is to be used on a platform that supports linking (like GitHub), the links should be made functional to lead to the corresponding sections of the document.
 
